@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.container {
+    width: 95%;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 1em 3em;
+
+}
+
+.head-container {
+    background: rgba(0, 0, 0, 0.345)url(survey-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+
+}
+
+.first-headline {
+    background-color: rgba(0, 0, 0, 0.677);
+    border-bottom: .1px solid rgba(255, 255, 255, 0.434);
+}
+
+.first-headline .container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.no-mai-dat {
+    display: flex;
+}
+
+.mail {
+    margin-left: 1em;
+}
+
+.date {
+    margin-left: 1em;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    margin-top: .3em;
+}
+
+.social a {
+    display: inline-block;
+    margin-right: 2em;
+    color: aliceblue;
+    font-size: 1em;
+    transition: transform 0.4s ease-in-out;
+    padding: .6em .1em;
+
+}
+
+.social a:hover {
+    transform: rotateY(180deg);
+    color: rgba(255, 111, 0, 0.873);
+}
+
+.header {
+    background-color: rgba(17, 15, 15, 0.541);
+    /*  position: fixed;
+top: 0;
+right: 0;
+left: 0;  */
+    /* margin-top: 3.8em; */
+}
+
+.header .container {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /*  margin-right: 10em; would change later */
+    margin-right: 7em;
+}
+
+.nav ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 3em;
+    transition: all ease-in .4s;
+    padding: 2.8em .2em;
+}
+
+.nav ul a:hover {
+    color: rgba(255, 111, 0, 0.873);
+}
+
+.sub-nav-1 {
+    display: none;
+}
+
+.nav ul li:hover .sub-nav-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(254, 255, 255);
+    border-top: 9px solid orangered;
+    margin-top: 2.3em;
+}
+
+.nav ul li:hover .sub-nav-1 ul {
+    display: block;
+    margin: 1em;
+}
+
+.nav ul li:hover .sub-nav-1 ul li {
+    display: block;
+    padding: .7em;
+
+}
+
+.nav ul li:hover .sub-nav-1 ul li a {
+    color: black;
+    margin-left: -1.5em;
+    padding: 1em;
+}
+
+.nav ul li:hover .sub-nav-1 ul li a:hover {
+    color: rgba(255, 111, 0, 0.873);
+}
+
+.btn {
+    margin-right: 1.5em;
+    /*  margin-left: -17em; */
+
+
+}
+
+.btn .btn1 {
+    background-color: rgb(224, 77, 33);
+    color: aliceblue;
+    padding: 1.2em 1.5em 1.2em 1.5em;
+    border-radius: .5em;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.btn .btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 31, 16, 0.421);
+    z-index: 1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+}
+
+.btn .btn1:hover::before {
+    transform: scaleX(1);
+}
+
+.hr {
+    display: flex;
+}
+
+hr {
+    height: 2%;
+    margin-top: 1.9em;
+    margin-right: -1em;
+}
+
+.hrs {
+    height: 2%;
+    margin-top: 7.9em;
+    margin-right: -1em;
+}
+
+.background-adv {
+
+    padding-left: 35em;
+    padding-top: 15em;
+    padding-bottom: 10em;
+
+}
+
+span-12 {
+    color: #ffff;
+    margin-left: .2em;
+    font-weight: bolder;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+span-12 a {
+    color: #ff5f13;
+    margin-left: .2em;
+    font-weight: bolder;
+    padding: 1em;
+    margin-top: 6em;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+span-s {
+    color: #ff5f13;
+    font-size: 2.5rem;
+}
+
+.big-adv {
+    font-size: 11.5rem;
+    width: 50%;
+    font-weight: bolder;
+    color: #ffff;
+    font-family: 'Oswald', sans-serif;
+    margin-top: -.3em;
+    margin-left: .3em;
+
+}
+
+.main .container {
+               display: flex;
+               margin-left: 10em;
+}
+.main .img-1{
+    border: 2px solid blue;
+    padding: 2em;
+}
+.img-1 .single-imgs{
+    background-color: rgba(221, 217, 213, 0.325);
+    margin-bottom: 3em;
+    width: 92%;
+}
+.date-note{
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer {
+    margin-top: 15em;
+    background-color: #070b11;
+    /*  padding: 20%; */
+    color: aliceblue;
+
+
+}
+
+.footer .container {
+    /*  margin-left: 31%; */
+    padding-top: 10%;
+    padding-left: 25%;
+
+}
+
+.footer .container .foot {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.foot .note-5 {
+    margin-top: .8em;
+    color: rgba(240, 248, 255, 0.595);
+}
+
+.foot-2 {
+    margin-left: .7em;
+    margin-top: 1em;
+}
+
+span-6 {
+    font-size: 3rem;
+}
+
+.note-6 ul {
+    list-style-type: none;
+    margin-top: 1em;
+    margin-left: 2.4em;
+
+}
+
+.note-6 ul li {
+    margin-bottom: .3em;
+}
+
+.note-6 ul li .quick-link {
+    color: rgba(240, 248, 255, 0.287);
+    text-decoration: none;
+}
+
+.foot-3 {
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+span-9 {
+    font-size: 3rem;
+}
+
+.note-7 {
+    margin-top: 1em;
+    color: rgba(240, 248, 255, 0.595);
+}
+
+span-12 {
+    color: rgba(240, 248, 255, 0.287);
+}
+
+.foot-4 {
+    margin-left: 3em;
+}
+
+input {
+    font-size: 2rem;
+    padding: .6em .8em;
+    color: #ffff;
+}
+
+.email {
+    background-color: #1e293a;
+    border: none;
+}
+
+.sign {
+    background-color: transparent;
+    color: rgba(240, 248, 255, 0.75);
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.img-map {
+    margin-top: 2em;
+    width: 30em;
+}
+
+.note-9 {
+    color: rgba(240, 248, 255, 0.75);
+    margin-bottom: 10em;
+}
+
+span-8 {
+    color: #9f0b11;
+}
+.img-flex-team {
+    display: flex;
+    padding-top: 10em;
+    padding-left: 35em;
+}
